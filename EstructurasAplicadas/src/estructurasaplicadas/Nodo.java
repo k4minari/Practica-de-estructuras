@@ -44,7 +44,7 @@ public class Nodo {
                 ", next=" + (next != null ? next.getValue(): null) + 
                 '}';
     }
-   
+     
     public static void main(String[] args){
         Nodo p = new Nodo(10);
         Nodo q = new Nodo(20);
