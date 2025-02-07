@@ -120,6 +120,7 @@ public class LinkedList {
         System.out.println("index for value(10): "+l.getIndex(10));
         System.out.println("index for value(100): "+l.getIndex(100));
         System.out.println("index for value(200): "+l.getIndex(200));
+        System.out.println("holip");
     }
     
 }
