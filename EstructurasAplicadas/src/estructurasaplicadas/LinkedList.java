@@ -69,6 +69,19 @@ public class LinkedList {
         }
         return null;
     }
+    public Integer getIndex(int value){
+        int index = 1;
+        Nodo nodo = first;
+        while(nodo != null){
+            if (nodo.getValue() == value){
+                break;
+            }
+            index++;
+            nodo = nodo.getNext();
+                    
+        }
+        return index;
+    }
 
     /**
      * Imprime los elementos de la lista
@@ -87,22 +100,25 @@ public class LinkedList {
      */
     public static void main(String[] args){
         LinkedList l = new LinkedList();
-        l.add(10);
-        l.add(20);
-        l.add(30);
-        l.add(40);
-        l.add(50);
-        l.add(60);
-        l.add(100);
+        //l.add(10);
+        //l.add(20);
+        //l.add(30);
+        //l.add(40);
+        //l.add(50);
+        //l.add(60);
+        //l.add(100);
         
-        l.print();       // TOCA INVESTIGAR COMO SE UTILIZA EL MODO DEBUG
-        System.out.println("Suma = "+l.sum());
+        //l.print();       // TOCA INVESTIGAR COMO SE UTILIZA EL MODO DEBUG
+        //System.out.println("Suma = "+l.sum());
         
         System.out.println("get(0): "+l.get(0));
         System.out.println("get(2): "+l.get(2));
         System.out.println("get(4): "+l.get(4));
         System.out.println("get(6): "+l.get(6));
+        
+        System.out.println("index for value(20): "+l.getIndex(20));
     }
+    
 }
 
     
