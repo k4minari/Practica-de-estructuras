@@ -69,18 +69,18 @@ public class LinkedList {
         }
         return null;
     }
-    public int getIndex(int value){
+    public Integer getIndex(int value){
         int index = 0;
         Nodo nodo = first;
         while(nodo != null){
             if (nodo.getValue() == value){
-                break;
+                return index;
             }
             index++;
             nodo = nodo.getNext();
                     
         }
-        return index;
+        return null;
     }
 
     /**
@@ -118,7 +118,7 @@ public class LinkedList {
         
         System.out.println("index for value(30): "+l.getIndex(30));
         System.out.println("index for value(10): "+l.getIndex(10));
-        System.out.println("index for value(100): "+l.getIndex(300));
+        System.out.println("index for value(100): "+l.getIndex(100));
         System.out.println("index for value(200): "+l.getIndex(200));
     }
     
